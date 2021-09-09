@@ -6,6 +6,7 @@
   <li> To run the test: `bundle exec rspec` </li>
 </ul>
 
+```
 Scrabble Score
 Write a program that, given a word, computes the scrabble score for that word.
 Letter Values
@@ -25,3 +26,4 @@ Examples
 3 points for B, twice
 2 points for G
 1 point for E
+```
