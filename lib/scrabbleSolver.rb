@@ -1,6 +1,10 @@
 class ScrabbleSolver
   def run(input)
 
+  if input.class != String
+    return "error"
+  end
+
     split_letters = input.upcase.chars
     arr = ["A","E","I","O","U","L","N","R","S","T"]
     arrTwo =["D","G"]
