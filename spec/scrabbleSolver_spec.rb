@@ -7,5 +7,9 @@ describe 'ScrabbleSolver' do
     test = ScrabbleSolver.new
     expect(test.run('A')).to eq 1
   end
+  it 'will return 1st when given 1' do
+    test = ScrabbleSolver.new
+    expect(test.run('A,E,I,O,U,L,N,R,S,T')).to eq 10
+  end
 
 end

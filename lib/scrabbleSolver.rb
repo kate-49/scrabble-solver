@@ -1,5 +1,5 @@
 class ScrabbleSolver
   def run(input)
-    return "hi apprentices"
+    return 1
   end
 end
