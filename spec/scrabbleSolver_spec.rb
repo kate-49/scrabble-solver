@@ -20,12 +20,12 @@ describe 'ScrabbleSolver' do
 
   it 'will return 3 when given CATS' do
     test = ScrabbleSolver.new
-    expect(test.run('CATS')).to eq 3
+    expect(test.run('CATS')).to eq 6
   end
 
   it 'will return 3 when given cats' do
     test = ScrabbleSolver.new
-    expect(test.run('cats')).to eq 3
+    expect(test.run('cats')).to eq 6
   end
 
   it 'will return 5 when given DOG' do
@@ -38,9 +38,19 @@ describe 'ScrabbleSolver' do
     expect(test.run('DG!!')).to eq 4
   end
 
-  it 'will return 12 when given BCMP' do
+    it 'will return 12 when given BCMP' do
+      test = ScrabbleSolver.new
+      expect(test.run('BCMP')).to eq 12
+  end
+
+  it 'will return 10 when given BamP' do
     test = ScrabbleSolver.new
-    expect(test.run('BCMP')).to eq 12
-end
+    expect(test.run('BamP')).to eq 10
+  end
+
+  it 'will return error when given numbers' do
+    test = ScrabbleSolver.new
+    expect(test.run(123)).to eq "error"
+  end
 
 end
