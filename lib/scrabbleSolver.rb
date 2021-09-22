@@ -3,12 +3,18 @@ class ScrabbleSolver
 
     split_letters = input.upcase.chars
     arr = ["A","E","I","O","U","L","N","R","S","T"]
+    arrTwo =["D","G"]
     counter = 0
 
     split_letters.each do |x|
         arr.each do |y|
           if x == y
             counter += 1
+          end
+        end
+        arrTwo.each do |z|
+          if x == z
+            counter += 2
           end
         end
     end

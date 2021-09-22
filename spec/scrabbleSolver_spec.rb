@@ -32,4 +32,15 @@ describe 'ScrabbleSolver' do
     test = ScrabbleSolver.new
     expect(test.run('DOG')).to eq 5
   end
+
+  it 'will return 4 when given DG!!' do
+    test = ScrabbleSolver.new
+    expect(test.run('DG!!')).to eq 4
+  end
+
+  it 'will return 12 when given BCMP' do
+    test = ScrabbleSolver.new
+    expect(test.run('BCMP')).to eq 12
+end
+
 end
