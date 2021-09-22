@@ -1,11 +1,17 @@
 class ScrabbleSolver
   def run(input)
-    if input == "A"
-      return 1
-    elsif input == "A,E,I,O,U,L,N,R,S,T"
-    return 10
-    end 
+
+    split_letters = input.upcase.chars
+    arr = ["A","E","I","O","U","L","N","R","S","T"]
+    counter = 0
+
+    split_letters.each do |x|
+        arr.each do |y|
+          if x == y
+            counter += 1
+          end
+        end
+    end
+    counter
   end
-
-
 end
